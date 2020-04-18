@@ -30,6 +30,11 @@ public class MainClass {
 		a.getDolphin();
 		a.getButterfly();
 		a.getCaterpillar();
+		
+		System.out.println("how many of these animals can fly ?  "+a.flyCount);
+		System.out.println("how many of these animals can walk? "+a.walkCount);
+		System.out.println("how many of these animals can sing? "+a.singCount);
+		System.out.println("how many of these animals can swim? "+a.swimCount);
 	}
 
 }

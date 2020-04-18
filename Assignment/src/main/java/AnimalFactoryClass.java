@@ -14,6 +14,12 @@ public class AnimalFactoryClass {
 	private Animal butterfly;
 	private Animal caterpillar;
 	
+	public static int flyCount =0;
+	public static int walkCount =0;
+	public static int singCount =0;
+	public static int swimCount =0;
+	
+	
 	public AnimalFactoryClass(Animal bird,Animal duck,Animal chicken,Animal rooster,Animal parrot,Animal fish,Animal shark,Animal clownfish,Animal dolphin,Animal butterfly,Animal caterpillar){
 		this.bird=bird;
 		this.duck=duck;
@@ -31,28 +37,36 @@ public class AnimalFactoryClass {
 	public void getBird(){
 		bird.fly();
 		bird.sing();
+		flyCount++;
+		singCount++;
 		
 	}
 	
 	public void getDuck(){
 		duck.sing();
 		duck.swim();
+		singCount++;
+		swimCount++;
 	}
 	
 	public void getChicken(){
 		chicken.sing();
+		singCount++;
 	}
 	
 	public void getRooster(){
 		rooster.sing();
+		singCount++;
 	}
 	
 	public void getParrot(){
 		parrot.sing();
+		singCount++;
 	}
 	
 	public void getFish(){
 		fish.swim();
+		swimCount++;
 	}
 	
 	public void getShark(){
@@ -66,14 +80,17 @@ public class AnimalFactoryClass {
 	}
 	public void getDolphin(){
 		dolphin.swim();
+		swimCount++;
 	}
 	
 	public void getButterfly(){
 		butterfly.fly();
+		flyCount++;
 	}
 	
 	public void getCaterpillar(){
 		caterpillar.walk();
+		walkCount++;
 	}
 	
 }

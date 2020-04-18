@@ -17,4 +17,20 @@ public interface Animal {
 	public default void swim(){
 		System.out.println("I am swimming");
 	}
+	
+	public default void sizeNColor(){
+		System.out.println("Size and Color ");
+		
+	}
+	
+	public default void jokes(){
+		System.out.println("jokes ");
+		
+	}
+	
+	public default void eat(){
+		System.out.println("eat ");
+		
+	}
+	
 }
